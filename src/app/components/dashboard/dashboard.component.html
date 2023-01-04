@@ -1,0 +1,37 @@
+<!-- <div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <h1>Welcome to dashboard</h1>
+        <div class="card blue" *ngFor="let emplyoee of movies">
+            <h1>{{ emplyoee.movieName }}</h1>
+            <p>{{ emplyoee.moviePosterUrl }}</p>
+            <a class="cta" href="#" title="CTA">{{ emplyoee.movieTags }}</a>
+        </div>
+    </div>
+</div>
+ -->
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" *ngFor="let MVOIES of movies">
+            <mat-card class="mat-elevation-z4">
+                <!-- <mat-card-header>
+                </mat-card-header> -->
+                <img class="mat-card" mat-card-image src="{{ MVOIES.moviePosterUrl }}" />
+                <!-- <mat-card-content>
+                    <mat-card-title>
+                        <button style="height: 33px" type="submit" mat-raised-button color="primary">
+              Name : {{ MVOIES.movieName }}
+            </button>
+                    </mat-card-title>
+                </mat-card-content> -->
+                <mat-card-actions>
+                    <button style="height: 33px" type="submit" mat-raised-button color="primary">
+            Name : {{ MVOIES.movieName }}
+          </button>
+                    <button style="height: 33px" type="submit" mat-raised-button color="primary" [routerLink]="['/movies', MVOIES.id]">
+            Ticket
+          </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

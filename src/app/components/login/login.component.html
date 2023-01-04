@@ -1,0 +1,36 @@
+<div class="bootstrap-wrapper">
+    <div class="container mt">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img class="img-fluid" style="width: 130px" src="/assets/logins.png" alt="" />
+                </div>
+                <h1 class="text-center">Login Please</h1>
+
+                <!-- creating form  -->
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>UserName</mat-label>
+                        <input type="text" [(ngModel)]="credential.username" name="username" matInput required />
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" name="password" [(ngModel)]="credential.password" matInput required />
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">
+              login
+            </button>
+                        <button type="reset" mat-raised-button color="accent" style="margin-left: 10px">
+              reset
+            </button>
+                    </div>
+                </form>
+                <!-- testing the user input using pipe json -->
+                {{ credential | json }}
+            </div>
+        </div>
+    </div>
+</div>

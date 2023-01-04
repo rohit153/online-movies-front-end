@@ -1,0 +1,51 @@
+.example-card {
+  max-width: 600px;
+  border-radius: 25px;
+  background: #73ad21;
+  margin-top: 7px;
+  padding: 20px;
+  height: 850px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+
+}
+.mat-card-image{
+  size: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+p {
+  font-family: Lato;
+}
+
+.example-cards {
+  max-width: 900px;
+  border-radius: 25px;
+  background: gainsboro;
+  margin-top: 7px;
+  padding: 20px;
+  height: 850px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.example-margin {
+  margin: 0 10px;
+  size: 100px;
+}
+
+::ng-deep .mat-checkbox .mat-checkbox-inner-container {
+  width: 30px;
+  height: 30px;
+}
